@@ -58,6 +58,10 @@ run:
     $ systemctl enable docker-w3c_validator.service
 
 
+## Maintenance
+
+The Dockerfile should be updated whenever there is a new release on [https://github.com/validator/validator/releases](https://github.com/validator/validator/releases)
+
 ## Credits
 
 This image is builded on top of: 
