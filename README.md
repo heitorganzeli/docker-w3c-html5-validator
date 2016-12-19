@@ -1,6 +1,7 @@
-#docker-w3c-html5-validator
+# docker-w3c-html5-validator
 
 Docker image for W3C HTML 5 validator to be used with top-sites/brsites site analysis
+
 
 ## Building
 
@@ -15,6 +16,7 @@ This will take some time (lots to download), performing the following tasks:
 * Install and configure W3C validator (including Validator.nu setup).
 * Start Apache and Validator.nu under supervisord.
 
+
 ## Running
 
 To start the image run:
@@ -28,6 +30,7 @@ To view IP address of the container:
 
     $ docker ps
     $ docker inspect w3c_validator
+
 
 ## Deploy
 
@@ -53,6 +56,7 @@ WantedBy=default.target
 run: 
 
     $ systemctl enable docker-w3c_validator.service
+
 
 ## Credits
 
