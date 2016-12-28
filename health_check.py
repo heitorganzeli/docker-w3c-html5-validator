@@ -9,7 +9,7 @@ def main():
         with urllib.request.urlopen('http://localhost:45000/w3c-validator/', timeout=30):
             print('service ok')
     except:
-        os.chdir(os.path.dirname(sys.argv[0]))
+        os.chdir(os.path.dirname(os.path.realpath(__file__)))
         __execute_system_command("/bin/bash reboot_validator.sh")
 
 
