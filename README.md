@@ -63,7 +63,7 @@ run:
 ### Health Check
 
 The validator checker server tends to fail and stop executing checks under high
-load :disappointed:
+load.
 
 To prevent those performance issues to affect page validation results, the 
 `health_checker.py` script was created. It try to access the local validator 
