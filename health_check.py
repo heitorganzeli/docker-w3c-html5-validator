@@ -15,3 +15,6 @@ def __execute_system_command(command):
     dns_process = subprocess.Popen(command.split(), stdout=subprocess.PIPE)
     out, err = dns_process.communicate()
     return out.decode('utf-8')
+
+if __name__ == "__main__":
+    main()
