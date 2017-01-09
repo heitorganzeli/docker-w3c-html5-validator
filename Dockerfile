@@ -14,7 +14,7 @@ ADD ./resources/supervisord.conf /etc/supervisor/supervisord.conf
 RUN sed 's/Allow Private IPs = no/Allow Private IPs = yes/' -i /etc/w3c/validator.conf
 RUN sed 's/#HTML5/HTML5/' -i /etc/w3c/validator.conf 
 
-ADD https://github.com/validator/validator/releases/download/16.6.29/vnu.jar_16.6.29.zip /root/build/
+ADD https://github.com/validator/validator/releases/download/16.6.29/vnu.jar_17.0.1.zip /root/build/
 RUN unzip -j /root/build/vnu*.zip -d /root/build/validator.nu
 
 RUN apt-get clean
