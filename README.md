@@ -15,7 +15,7 @@ This will take some time (lots to download), performing the following tasks:
 * Install Ubuntu base (16.04), Apache HTTP server, OpenJDK 8, supervisord and a
   few others.
 * Download W3C validator and Validator.nu vnu.jar portable HTML5 validator jar
-  (version 17.0.1).
+  (version 17.1.0).
 * Install and configure W3C validator (including Validator.nu setup).
 * Start Apache and Validator.nu under supervisord.
 
