@@ -1,5 +1,5 @@
 #!/bin/bash
-
+/usr/bin/git pull
 /bin/systemctl stop docker-w3c_validator.service
 /usr/bin/docker rm w3c_validator
 /usr/bin/docker build -t nicbr/w3c-html5-validator .
