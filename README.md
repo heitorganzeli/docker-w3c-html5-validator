@@ -8,7 +8,7 @@ analysis
 
 to build this image run
 
-    $ docker build -t heitorganzeli/w3c-html5-validator .
+    $ docker build -t heitorganzeli/docker-w3c-html5-validator .
 
 This will take some time (lots to download), performing the following tasks:
 
@@ -24,7 +24,7 @@ This will take some time (lots to download), performing the following tasks:
 
 To start the image run:
 
-    $ docker run -d -p 45000:80 --name w3c_validator heitorganzeli/w3c-html5-validator
+    $ docker run -d -p 45000:80 --name w3c_validator heitorganzeli/docker-w3c-html5-validator
 
 this will start the image in a new container and expose the w3c-checker to be 
 used on port 45000 URL is `http://localhost:45000/w3c-validator/`
