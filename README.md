@@ -8,14 +8,14 @@ analysis
 
 to build this image run
 
-    $ docker build -t nicbr/w3c-html5-validator .
+    $ docker build -t heitorganzeli/w3c-html5-validator .
 
 This will take some time (lots to download), performing the following tasks:
 
 * Install Ubuntu base (16.04), Apache HTTP server, OpenJDK 8, supervisord and a
   few others.
 * Download W3C validator and Validator.nu vnu.jar portable HTML5 validator jar
-  (version 17.x).
+  (version 17.x.x).
 * Install and configure W3C validator (including Validator.nu setup).
 * Start Apache and Validator.nu under supervisord.
 
@@ -24,7 +24,7 @@ This will take some time (lots to download), performing the following tasks:
 
 To start the image run:
 
-    $ docker run -d -p 45000:80 --name w3c_validator nicbr/w3c-html5-validator
+    $ docker run -d -p 45000:80 --name w3c_validator heitorganzeli/w3c-html5-validator
 
 this will start the image in a new container and expose the w3c-checker to be 
 used on port 45000 URL is `http://localhost:45000/w3c-validator/`
